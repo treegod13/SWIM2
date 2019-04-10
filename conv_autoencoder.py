@@ -93,12 +93,12 @@ autoencoder.fit(x = data, y = data, epochs = 8000, batch_size = batch_size, shuf
 
 # Plot the figures
 print('Data shape: ' + str(data.shape))
-plot_autoencoder([autoencoder, encoder], data, 1, file_name='tmp')
+plot_autoencoder([autoencoder, encoder], data, 0, file_name='tmp')
 
 # Save the model
-autoencoder.save('./models/autoencoder.h5')
-encoder.save('./models/encoder.h5')
-decoder.save('./models/decoder.h5')
+# autoencoder.save('./models/autoencoder.h5')
+# encoder.save('./models/encoder.h5')
+# decoder.save('./models/decoder.h5')
 
 
 

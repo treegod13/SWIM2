@@ -13,7 +13,7 @@ train_able = 0
 # train_able = sys.argv[1]
 
 # Load sensors data
-file_path = '/home/chen/OneDrive/rnn/'
+file_path = '/home/sungod/OneDrive/rnn/'
 sensors_data, sensors_label = load_sensors_data(file_path + 'data/ship_sensors_1.csv')
 sensors_data = split_sensors_data(sensors_data, window_size = 60)
 sensors_data = sensors_data[:, :, [1,2,3,7]]  # remove the time dimension
